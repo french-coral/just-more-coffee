@@ -29,3 +29,6 @@ func _on_timer_timeout() -> void:
 		Global.main.capsules += auto_prod_per_sec
 	if assigned_currency == CURRENCY.COFFEE:
 		Global.main.coffee += auto_prod_per_sec
+
+func update_currency(number:int):
+	$MarginContainer/CurrencyDisplay.set_text(str(number))
