@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://uaxqqqg6f4om"]
+
+[node name="CurrencyDisplay" type="Control" unique_id=1124069433]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
