@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dvlyb2d4iqadr"]
 
-[node name="Control" type="Control" unique_id=704386964]
+[node name="UpgradeScroller" type="Control" unique_id=704386964]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
