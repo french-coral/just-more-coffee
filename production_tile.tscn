@@ -1,12 +1,34 @@
 [gd_scene format=3 uid="uid://qgnxygggl2yk"]
 
-[ext_resource type="Script" uid="uid://cbv2x44cxfth0" path="res://Scripts/production_tile.gd" id="1_gta4h"]
 [ext_resource type="PackedScene" uid="uid://dvlyb2d4iqadr" path="res://upgrade_scroller.tscn" id="1_uelje"]
+[ext_resource type="Script" uid="uid://c414uxhinpr7x" path="res://Scripts/currency_display.gd" id="1_uxogw"]
+[ext_resource type="PackedScene" uid="uid://uaxqqqg6f4om" path="res://currency_display.tscn" id="2_70l7s"]
+[ext_resource type="PackedScene" uid="uid://r26nefjehtho" path="res://main_click_area.tscn" id="2_rycj3"]
 
 [node name="ProductionTile" type="PanelContainer" unique_id=1354468006]
 offset_right = 488.0
 offset_bottom = 608.0
-script = ExtResource("1_gta4h")
+script = ExtResource("1_uxogw")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=577893473]
+layout_mode = 2
+theme_override_constants/margin_left = 130
+theme_override_constants/margin_top = 45
+theme_override_constants/margin_right = 130
+theme_override_constants/margin_bottom = 480
+
+[node name="CurrencyDisplay" parent="MarginContainer" unique_id=1124069433 instance=ExtResource("2_70l7s")]
+layout_mode = 2
+
+[node name="MarginContainer_ClickArea" type="MarginContainer" parent="." unique_id=1293303993]
+layout_mode = 2
+theme_override_constants/margin_left = 120
+theme_override_constants/margin_top = 160
+theme_override_constants/margin_right = 120
+theme_override_constants/margin_bottom = 200
+
+[node name="MainClick" parent="MarginContainer_ClickArea" unique_id=199394689 instance=ExtResource("2_rycj3")]
+layout_mode = 2
 
 [node name="UpgradeScroller" parent="." unique_id=1832575366 instance=ExtResource("1_uelje")]
 layout_mode = 2
