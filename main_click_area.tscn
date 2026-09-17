@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://r26nefjehtho"]
 
 [ext_resource type="Texture2D" uid="uid://dso67qv7oi00c" path="res://icon.svg" id="1_lbma2"]
+[ext_resource type="Script" uid="uid://c8ina1iuu1n2i" path="res://main_click_area.gd" id="1_sbf8o"]
 
 [node name="MainClick" type="Control" unique_id=199394689]
 layout_mode = 3
@@ -11,6 +12,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("1_sbf8o")
 
 [node name="TextureButton" type="TextureButton" parent="." unique_id=854797703]
 layout_mode = 1
@@ -21,3 +23,5 @@ grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("1_lbma2")
 stretch_mode = 4
+
+[connection signal="button_up" from="TextureButton" to="." method="_on_texture_button_button_up"]

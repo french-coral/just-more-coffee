@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://qgnxygggl2yk"]
 
+[ext_resource type="Script" uid="uid://cbv2x44cxfth0" path="res://Scripts/production_tile.gd" id="1_gta4h"]
 [ext_resource type="PackedScene" uid="uid://dvlyb2d4iqadr" path="res://upgrade_scroller.tscn" id="1_uelje"]
-[ext_resource type="Script" uid="uid://c414uxhinpr7x" path="res://Scripts/currency_display.gd" id="1_uxogw"]
 [ext_resource type="PackedScene" uid="uid://uaxqqqg6f4om" path="res://currency_display.tscn" id="2_70l7s"]
 [ext_resource type="PackedScene" uid="uid://r26nefjehtho" path="res://main_click_area.tscn" id="2_rycj3"]
 
 [node name="ProductionTile" type="PanelContainer" unique_id=1354468006]
 offset_right = 488.0
 offset_bottom = 608.0
-script = ExtResource("1_uxogw")
+script = ExtResource("1_gta4h")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=577893473]
 layout_mode = 2
