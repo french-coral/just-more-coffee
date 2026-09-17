@@ -2,6 +2,12 @@
 
 [ext_resource type="Script" uid="uid://bmtb3hrmiq8g8" path="res://Scripts/main.gd" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://qgnxygggl2yk" path="res://production_tile.tscn" id="2_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://b55ep0eacswsm" path="res://Assets/Berry.png" id="3_5vw27"]
+[ext_resource type="Texture2D" uid="uid://b4blas8wte8n1" path="res://Assets/CoffeeBean.png" id="3_272bh"]
+[ext_resource type="Texture2D" uid="uid://yhutr71n60e1" path="res://Assets/Tree.png" id="4_5vw27"]
+[ext_resource type="Texture2D" uid="uid://dro8hp2ufpo14" path="res://Assets/Coffee_Grinder.png" id="5_kek77"]
+[ext_resource type="Texture2D" uid="uid://qc7un52ygjeh" path="res://Assets/Coffeecup.png" id="6_4c57u"]
+[ext_resource type="Texture2D" uid="uid://cq2lilmpt44kh" path="res://Assets/Coffee_Machine.png" id="7_efxa6"]
 
 [node name="Main" type="Control" unique_id=1671997699]
 layout_mode = 3
@@ -36,6 +42,8 @@ alignment = 1
 [node name="ProductionTile_Bean" parent="MarginContainer/VBoxContainer/HBoxContainer_Scroller" unique_id=1763181018 instance=ExtResource("2_0xm2m")]
 layout_mode = 2
 size_flags_horizontal = 3
+currency_sprite = ExtResource("3_5vw27")
+clickable_sprite = ExtResource("4_5vw27")
 prod_per_click = 1
 cost = 0
 auto_prod_per_sec = 0
@@ -43,6 +51,8 @@ auto_prod_per_sec = 0
 [node name="ProductionTile_Capsule" parent="MarginContainer/VBoxContainer/HBoxContainer_Scroller" unique_id=1362105860 instance=ExtResource("2_0xm2m")]
 layout_mode = 2
 size_flags_horizontal = 3
+currency_sprite = ExtResource("3_272bh")
+clickable_sprite = ExtResource("5_kek77")
 assigned_currency = 1
 prod_per_click = 1
 cost = 1
@@ -51,6 +61,8 @@ auto_prod_per_sec = 0
 [node name="ProductionTile_Coffee" parent="MarginContainer/VBoxContainer/HBoxContainer_Scroller" unique_id=2067661176 instance=ExtResource("2_0xm2m")]
 layout_mode = 2
 size_flags_horizontal = 3
+currency_sprite = ExtResource("6_4c57u")
+clickable_sprite = ExtResource("7_efxa6")
 assigned_currency = 2
 prod_per_click = 1
 cost = 1

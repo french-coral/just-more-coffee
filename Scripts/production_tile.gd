@@ -7,6 +7,9 @@ enum CURRENCY {
 	COFFEE
 }
 
+@export var currency_sprite = Texture2D
+@export var clickable_sprite = Texture2D
+
 @export var assigned_currency : CURRENCY
 
 @export var prod_per_click = 1

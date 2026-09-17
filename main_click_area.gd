@@ -3,7 +3,11 @@ extends Control
 @onready var production_tile : ProductionTile = get_parent().get_parent()
 @onready var CURRENCY_TYPE = production_tile.assigned_currency
 
+@onready var export_sprite = production_tile.clickable_sprite
+@onready var sprite = $MarginContainer/TextureButton
 
+func _ready() -> void:
+	sprite.texture_normal = export_sprite
 
 func _on_texture_button_button_up() -> void:
 	match CURRENCY_TYPE :
