@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://d074xnxf2xcf4"]
 
 [ext_resource type="Script" uid="uid://bmtb3hrmiq8g8" path="res://Scripts/main.gd" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://qgnxygggl2yk" path="res://production_tile.tscn" id="2_0xm2m"]
 
 [node name="Main" type="Control" unique_id=1671997699]
 layout_mode = 3
@@ -8,3 +9,12 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_ig7tw")
+
+[node name="ProductionTile_Bean" parent="." unique_id=1763181018 instance=ExtResource("2_0xm2m")]
+layout_mode = 0
+
+[node name="ProductionTile_Capsule" parent="." unique_id=1362105860 instance=ExtResource("2_0xm2m")]
+layout_mode = 0
+
+[node name="ProductionTile_Coffee" parent="." unique_id=2067661176 instance=ExtResource("2_0xm2m")]
+layout_mode = 0
