@@ -1,7 +1,18 @@
 [gd_scene format=3 uid="uid://qgnxygggl2yk"]
 
-[node name="ProductionTile" type="Control" unique_id=1763181018]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[ext_resource type="Script" uid="uid://cbv2x44cxfth0" path="res://Scripts/production_tile.gd" id="1_gta4h"]
+[ext_resource type="PackedScene" uid="uid://dvlyb2d4iqadr" path="res://upgrade_scroller.tscn" id="1_uelje"]
+
+[node name="ProductionTile" type="PanelContainer" unique_id=1354468006]
+offset_right = 488.0
+offset_bottom = 608.0
+script = ExtResource("1_gta4h")
+
+[node name="UpgradeScroller" parent="." unique_id=1832575366 instance=ExtResource("1_uelje")]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="Timer" type="Timer" parent="." unique_id=740732100]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -14,6 +14,10 @@ config/name="JustMoreCoffee"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*uid://dbt6huygn1hdb"
+
 [display]
 
 window/stretch/mode="canvas_items"

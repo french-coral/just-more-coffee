@@ -1,7 +1,73 @@
 [gd_scene format=3 uid="uid://dvlyb2d4iqadr"]
 
-[node name="UpgradeScroller" type="Control" unique_id=704386964]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[ext_resource type="Script" uid="uid://dg0wdwlq8klg4" path="res://Scripts/upgrade_scroller.gd" id="1_kjvhj"]
+
+[node name="UpgradeScroller" type="PanelContainer" unique_id=1832575366]
+offset_right = 408.0
+offset_bottom = 176.0
+script = ExtResource("1_kjvhj")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1803522513]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1558994195]
+layout_mode = 2
+
+[node name="PoductionUp" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1442867085]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Production / Click"
+alignment = 0
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/PoductionUp" unique_id=1297532436]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "x Grains "
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="AutoProd" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1719084227]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Rendement +"
+alignment = 0
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/AutoProd" unique_id=1259022424]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "x Grains "
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Efficiency" type="Button" parent="MarginContainer/VBoxContainer" unique_id=802123507]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Auto Prod"
+alignment = 0
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/Efficiency" unique_id=593571676]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "x Grains "
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[connection signal="button_up" from="MarginContainer/VBoxContainer/PoductionUp" to="." method="_on_poduction_up_button_up"]
+[connection signal="button_up" from="MarginContainer/VBoxContainer/AutoProd" to="." method="_on_auto_prod_button_up"]
+[connection signal="button_up" from="MarginContainer/VBoxContainer/Efficiency" to="." method="_on_efficiency_button_up"]
