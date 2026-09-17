@@ -9,6 +9,9 @@
 offset_right = 488.0
 offset_bottom = 608.0
 script = ExtResource("1_gta4h")
+prod_per_click = null
+cost = null
+auto_prod_per_sec = null
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=577893473]
 layout_mode = 2

@@ -13,10 +13,10 @@ var capsules : int:
 		capsules = new_value
 		capsule_prod.update_currency(capsules)
 
-var coffee:int:
+var coffee : int:
 	set(new_value):
-		coffee_prod = new_value
-		coffee_prod.update_currency(coffe_prod)
+		coffee = new_value
+		coffee_prod.update_currency(coffee)
 
 @onready var beans_prod = $MarginContainer/VBoxContainer/HBoxContainer_Scroller/ProductionTile_Bean
 @onready var capsule_prod = $MarginContainer/VBoxContainer/HBoxContainer_Scroller/ProductionTile_Capsule
