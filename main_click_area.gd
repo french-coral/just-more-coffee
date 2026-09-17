@@ -22,9 +22,9 @@ func _on_texture_button_button_up() -> void:
 			if Global.main.beans >= Global.main.capsule_prod.cost :
 				Global.main.capsules += production_tile.prod_per_click
 				Global.main.beans -= Global.main.capsule_prod.cost
-				print(Global.main.beans_prod.cost)
 			else : # Not Enough Bean
 				pass
+		
 		ProductionTile.CURRENCY.COFFEE :
 			if Global.main.capsules >= Global.main.capsule_prod.cost:
 				Global.main.coffee += production_tile.prod_per_click
