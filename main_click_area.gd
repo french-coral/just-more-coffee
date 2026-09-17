@@ -4,6 +4,7 @@ extends Control
 @onready var CURRENCY_TYPE = production_tile.assigned_currency
 
 
+
 func _on_texture_button_button_up() -> void:
 	match CURRENCY_TYPE :
 		ProductionTile.CURRENCY.BEANS :

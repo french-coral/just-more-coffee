@@ -36,20 +36,13 @@ alignment = 1
 [node name="ProductionTile_Bean" parent="MarginContainer/VBoxContainer/HBoxContainer_Scroller" unique_id=1763181018 instance=ExtResource("2_0xm2m")]
 layout_mode = 2
 size_flags_horizontal = 3
-prod_per_click = null
-cost = null
-auto_prod_per_sec = null
 
 [node name="ProductionTile_Capsule" parent="MarginContainer/VBoxContainer/HBoxContainer_Scroller" unique_id=1362105860 instance=ExtResource("2_0xm2m")]
 layout_mode = 2
 size_flags_horizontal = 3
-prod_per_click = null
-cost = null
-auto_prod_per_sec = null
+assigned_currency = 1
 
 [node name="ProductionTile_Coffee" parent="MarginContainer/VBoxContainer/HBoxContainer_Scroller" unique_id=2067661176 instance=ExtResource("2_0xm2m")]
 layout_mode = 2
 size_flags_horizontal = 3
-prod_per_click = null
-cost = null
-auto_prod_per_sec = null
+assigned_currency = 2
