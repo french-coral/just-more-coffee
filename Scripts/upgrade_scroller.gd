@@ -1,7 +1,6 @@
 extends PanelContainer
 
-
-var production_tile : ProductionTile
+var production_tile 
 
 var production_up_cost : int = 10:
 	set(new_value):

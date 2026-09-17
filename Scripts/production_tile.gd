@@ -5,7 +5,6 @@ enum CURRENCY {
 	BEANS,
 	CAPSULES,
 	COFFEE
-	
 }
 
 var assigned_currency : CURRENCY
