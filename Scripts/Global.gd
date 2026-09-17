@@ -1,3 +1,3 @@
 extends Node
 
-var main 
+var main : Main

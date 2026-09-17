@@ -1,4 +1,11 @@
 extends Control
+class_name Main
+
+
+
+var beans : int
+var capsules : int
+var coffee:int
 
 
 # Called when the node enters the scene tree for the first time.
