@@ -1,7 +1,32 @@
 [gd_scene format=3 uid="uid://uaxqqqg6f4om"]
 
+[ext_resource type="Script" uid="uid://c414uxhinpr7x" path="res://Scripts/currency_display.gd" id="1_kbswh"]
+[ext_resource type="Texture2D" uid="uid://dso67qv7oi00c" path="res://icon.svg" id="2_fqiv7"]
+
 [node name="CurrencyDisplay" type="Control" unique_id=1124069433]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kbswh")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=687650349]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="HBoxContainer" unique_id=617012132]
+layout_mode = 2
+text = "450"
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer" unique_id=911200100]
+layout_mode = 2
+texture = ExtResource("2_fqiv7")
+expand_mode = 3
+stretch_mode = 4
